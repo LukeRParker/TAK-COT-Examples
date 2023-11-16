@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: tak-ais-subscriber
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tak-ais-subscriber
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: tak-ais-subscriber
+    spec:
+      containers:
+        - env:
+            - name: KAFKANAME
+              value: "democluster-kafka-bootstrap.kafka.svc" #The name of your Kafka service in K8s. This is based on the example at ./Generalised/kafka/strimzi-kafka-kraft.yaml
+            - name: KAFKAPORT
+              value: "9092" #The port your Kafka service is running on
+            - name: KAFKATOPIC
+              value: "aistopic" #The Kafka topic you want to subscribe to
+            - name: KAFKACONSUMERGP
+              value: "aisgroup" #The consumer group you want your subscriber to be associated with
+            - name: KAFKAOFFSET
+              value: "earliest" #Kafka topic offset setting (earliest or latest)
+            - name: TAKHOST
+              value: "takserver" #The addressable hostname of your TAK Server
+            - name: TAKPORT
+              value: "8089" #TLS port for TAK Clients to connect to
+            - name: TAKCONMETHOD
+              value: "tls://" #Using TLS connection to TAK server
+          image: tak-ais-subscriber
+          name: tak-ais-subscriber
+          imagePullPolicy: Never
+          resources: {}
+          tty: true
+          volumeMounts:
+          - name: secret-volume
+            mountPath: "/etc/ssl/certs" # This is the directory where your secret will appear
+      volumes:
+      - name: secret-volume
+        secret:
+          secretName: tak-client-tls-cert # This is the name of your secret
+      hostname: tak-ais-subscriber
+      restartPolicy: Always
+
+status: {}

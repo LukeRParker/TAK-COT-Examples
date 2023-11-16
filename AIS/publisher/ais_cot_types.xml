@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<types>
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="90"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="38"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="39"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="10"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="11"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="12"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="13"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="14"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="15"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="16"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="17"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="18"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="19"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="56"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="57"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="59"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="91"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="92"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="93"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="94"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="95"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="96"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="97"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="98"                                                      />
+  <cot cot="a-.-S"                     full="Surface/SEA SURFACE TRACK"                                     desc="99"                                                      />
+  <cot cot="a-.-G-U-C-V-S"             full="Gnd/Combat/Aviation/SEARCH AND RESCUE"                         desc="29"                                                      />
+  <cot cot="a-.-A-C-F"                 full="Air/Civ/fixed"                                                 desc="20"                                                             />
+  <cot cot="a-.-A-C-F"                 full="Air/Civ/fixed"                                                 desc="21"                                                             />
+  <cot cot="a-.-A-C-F"                 full="Air/Civ/fixed"                                                 desc="22"                                                             />
+  <cot cot="a-.-A-C-F"                 full="Air/Civ/fixed"                                                 desc="23"                                                             />
+  <cot cot="a-.-A-C-F"                 full="Air/Civ/fixed"                                                 desc="24"                                                             />
+  <cot cot="a-.-A-C-F"                 full="Air/Civ/fixed"                                                 desc="25"                                                             />
+  <cot cot="a-.-A-C-F"                 full="Air/Civ/fixed"                                                 desc="26"                                                             />
+  <cot cot="a-.-A-C-F"                 full="Air/Civ/fixed"                                                 desc="27"                                                             />
+  <cot cot="a-.-A-C-F"                 full="Air/Civ/fixed"                                                 desc="28"                                                             />
+  <cot cot="a-.-S-C"                   full="Surface/COMBATANT"                                             desc="COMBATANT"                                                              />
+  <cot cot="a-.-S-C-A"                 full="Surface/AMPHIBIOUS WARFARE SHIP"                               desc="AMPHIBIOUS WARFARE SHIP"                                                />
+  <cot cot="a-.-S-C-A-L-A"             full="Surface/ASSAULT VESSEL"                                        desc="ASSAULT VESSEL"                                                         />
+  <cot cot="a-.-S-C-A-L-C"             full="Surface/LANDING CRAFT"                                         desc="LANDING CRAFT"                                                          />
+  <cot cot="a-.-S-C-A-L-S"             full="Surface/LANDING SHIP"                                          desc="LANDING SHIP"                                                           />
+  <cot cot="a-.-S-C-H"                 full="Surface/HOVERCRAFT"                                            desc="40"                                                             />
+  <cot cot="a-.-S-C-H"                 full="Surface/HOVERCRAFT"                                            desc="41"                                                             />
+  <cot cot="a-.-S-C-H"                 full="Surface/HOVERCRAFT"                                            desc="42"                                                             />
+  <cot cot="a-.-S-C-H"                 full="Surface/HOVERCRAFT"                                            desc="43"                                                             />
+  <cot cot="a-.-S-C-H"                 full="Surface/HOVERCRAFT"                                            desc="44"                                                             />
+  <cot cot="a-.-S-C-H"                 full="Surface/HOVERCRAFT"                                            desc="45"                                                             />
+  <cot cot="a-.-S-C-H"                 full="Surface/HOVERCRAFT"                                            desc="46"                                                             />
+  <cot cot="a-.-S-C-H"                 full="Surface/HOVERCRAFT"                                            desc="47"                                                             />
+  <cot cot="a-.-S-C-H"                 full="Surface/HOVERCRAFT"                                            desc="48"                                                             />
+  <cot cot="a-.-S-C-H"                 full="Surface/HOVERCRAFT"                                            desc="49"                                                             />
+  <cot cot="a-.-S-C-L"                 full="Surface/LINE"                                                  desc="LINE"                                                                   />
+  <cot cot="a-.-S-C-L-B-B"             full="Surface/BATTLESHIP"                                            desc="BATTLESHIP"                                                             />
+  <cot cot="a-.-S-C-L-C-C"             full="Surface/CRUISER"                                               desc="CRUISER"                                                                />
+  <cot cot="a-.-S-C-L-C-V"             full="Surface/CARRIER"                                               desc="CARRIER"                                                                />
+  <cot cot="a-.-S-C-L-D-D"             full="Surface/DESTROYER"                                             desc="DESTROYER"                                                              />
+  <cot cot="a-.-S-C-L-F-F"             full="Surface/FRIGATE/CORVETTE"                                      desc="FRIGATE/CORVETTE"                                                       />
+  <cot cot="a-.-S-C-M"                 full="Surface/MINE WARFARE VESSEL"                                   desc="MINE WARFARE VESSEL"                                                    />
+  <cot cot="a-.-S-C-M-M-A"             full="Surface/MCM SUPPORT"                                           desc="MCM SUPPORT"                                                            />
+  <cot cot="a-.-S-C-M-M-D"             full="Surface/MCM DRONE"                                             desc="MCM DRONE"                                                              />
+  <cot cot="a-.-S-C-M-M-H"             full="Surface/MINEHUNTER"                                            desc="MINEHUNTER"                                                             />
+  <cot cot="a-.-S-C-M-M-L"             full="Surface/MINELAYER"                                             desc="MINELAYER"                                                              />
+  <cot cot="a-.-S-C-M-M-S"             full="Surface/MINESWEEPER"                                           desc="MINESWEEPER"                                                            />
+  <cot cot="a-.-S-C-P"                 full="Surface/PATROL"                                                desc="PATROL"                                                                 />
+  <cot cot="a-.-S-C-P-S-B"             full="Surface/ANTISUBMARINE WARFARE"                                 desc="ANTISUBMARINE WARFARE"                                                  />
+  <cot cot="a-.-S-C-P-S-U"             full="Surface/ANTISURFACE WARFARE"                                   desc="ANTISURFACE WARFARE"                                                    />
+  <cot cot="a-.-S-G"                   full="Surface/NAVY GROUP"                                            desc="NAVY GROUP"                                                             />
+  <cot cot="a-.-S-G-C"                 full="Surface/CONVOY"                                                desc="CONVOY"                                                                 />
+  <cot cot="a-.-S-G-G"                 full="Surface/NAVY TASK GROUP"                                       desc="NAVY TASK GROUP"                                                        />
+  <cot cot="a-.-S-G-T"                 full="Surface/NAVY TASK FORCE"                                       desc="NAVY TASK FORCE"                                                        />
+  <cot cot="a-.-S-G-U"                 full="Surface/NAVY TASK UNIT"                                        desc="35"                                                         />
+  <cot cot="a-.-S-N"                   full="Surface/NONCOMBATANT"                                          desc="NONCOMBATANT"                                                           />
+  <cot cot="a-.-S-N-F"                 full="Surface/FLEET SUPPORT"                                         desc="FLEET SUPPORT"                                                          />
+  <cot cot="a-.-S-N-H"                 full="Surface/HOVERCRAFT"                                            desc="HOVERCRAFT"                                                             />
+  <cot cot="a-.-S-N-I"                 full="Surface/INTELLIGENCE"                                          desc="INTELLIGENCE"                                                           />
+  <cot cot="a-.-S-N-M"                 full="Surface/HOSPITAL SHIP"                                         desc="58"                                                          />
+  <cot cot="a-.-S-N-N"                 full="Surface/STATION"                                               desc="STATION"                                                                />
+  <cot cot="a-.-S-N-N-R"               full="Surface/RESCUE"                                                desc="51"                                                                 />
+  <cot cot="a-.-S-N-R"                 full="Surface/UNDERWAY REPLENISHMENT"                                desc="UNDERWAY REPLENISHMENT"                                                 />
+  <cot cot="a-.-S-N-S"                 full="Surface/SERVICE/SUPPORT HARBOR"                                desc="50"                                                 />
+  <cot cot="a-.-S-N-S"                 full="Surface/SERVICE/SUPPORT HARBOR"                                desc="53"                                                 />
+  <cot cot="a-.-S-N-S"                 full="Surface/SERVICE/SUPPORT HARBOR"                                desc="54"                                                 />
+  <cot cot="a-.-S-O"                   full="Surface/OWN TRACK"                                             desc="OWN TRACK"                                                              />
+  <cot cot="a-.-S-S"                   full="Surface/STATION"                                               desc="STATION"                                                                />
+  <cot cot="a-.-S-S-A"                 full="Surface/ASW SHIP"                                              desc="ASW SHIP"                                                               />
+  <cot cot="a-.-S-S-P"                 full="Surface/PICKET"                                                desc="PICKET"                                                                 />
+  <cot cot="a-.-S-X"                   full="Surface/NON MILITARY"                                          desc="NON MILITARY"                                                           />
+  <cot cot="a-.-S-X-F"                 full="Surface/FISHING"                                               desc="30"                                                                />
+  <cot cot="a-.-S-X-F-D-F"             full="Surface/DRIFTER"                                               desc="DRIFTER"                                                                />
+  <cot cot="a-.-S-X-F-D-R"             full="Surface/DREDGE"                                                desc="33"                                                                 />
+  <cot cot="a-.-S-X-F-T-R"             full="Surface/TRAWLER"                                               desc="TRAWLER"                                                                />
+  <cot cot="a-.-S-X-H"                 full="Surface/HOVERCRAFT"                                            desc="HOVERCRAFT"                                                             />
+  <cot cot="a-.-S-X-L"                 full="Surface/LAW ENFORCEMENT VESSEL"                                desc="55"                                                 />
+  <cot cot="a-.-S-X-M"                 full="Surface/MERCHANT"                                              desc="MERCHANT"                                                               />
+  <cot cot="a-.-S-X-M-C"               full="Surface/CARGO"                                                 desc="70"                                                                  />
+  <cot cot="a-.-S-X-M-C"               full="Surface/CARGO"                                                 desc="75"                                                                  />
+  <cot cot="a-.-S-X-M-C"               full="Surface/CARGO"                                                 desc="76"                                                                  />
+  <cot cot="a-.-S-X-M-C"               full="Surface/CARGO"                                                 desc="77"                                                                  />
+  <cot cot="a-.-S-X-M-C"               full="Surface/CARGO"                                                 desc="78"                                                                  />
+  <cot cot="a-.-S-X-M-C"               full="Surface/CARGO"                                                 desc="79"                                                                  />
+  <cot cot="a-.-S-X-M-F"               full="Surface/FERRY"                                                 desc="FERRY"                                                                  />
+  <cot cot="a-.-S-X-M-H"               full="Surface/HAZARDOUS MATERIALS (HAZMAT)"                          desc="71"                                           />
+  <cot cot="a-.-S-X-M-H"               full="Surface/HAZARDOUS MATERIALS (HAZMAT)"                          desc="72"                                           />
+  <cot cot="a-.-S-X-M-H"               full="Surface/HAZARDOUS MATERIALS (HAZMAT)"                          desc="73"                                           />
+  <cot cot="a-.-S-X-M-H"               full="Surface/HAZARDOUS MATERIALS (HAZMAT)"                          desc="74"                                           />
+  <cot cot="a-.-S-X-M-H"               full="Surface/HAZARDOUS MATERIALS (HAZMAT)"                          desc="81"                                           />
+  <cot cot="a-.-S-X-M-H"               full="Surface/HAZARDOUS MATERIALS (HAZMAT)"                          desc="82"                                           />
+  <cot cot="a-.-S-X-M-H"               full="Surface/HAZARDOUS MATERIALS (HAZMAT)"                          desc="83"                                           />
+  <cot cot="a-.-S-X-M-H"               full="Surface/HAZARDOUS MATERIALS (HAZMAT)"                          desc="84"                                           />
+  <cot cot="a-.-S-X-M-O"               full="Surface/OILER/TANKER"                                          desc="80"                                                           />
+  <cot cot="a-.-S-X-M-O"               full="Surface/OILER/TANKER"                                          desc="85"                                                           />
+  <cot cot="a-.-S-X-M-O"               full="Surface/OILER/TANKER"                                          desc="86"                                                           />
+  <cot cot="a-.-S-X-M-O"               full="Surface/OILER/TANKER"                                          desc="87"                                                           />
+  <cot cot="a-.-S-X-M-O"               full="Surface/OILER/TANKER"                                          desc="88"                                                           />
+  <cot cot="a-.-S-X-M-O"               full="Surface/OILER/TANKER"                                          desc="89"                                                           />
+  <cot cot="a-.-S-X-M-P"               full="Surface/PASSENGER"                                             desc="60"                                                              />
+  <cot cot="a-.-S-X-M-P"               full="Surface/PASSENGER"                                             desc="61"                                                              />
+  <cot cot="a-.-S-X-M-P"               full="Surface/PASSENGER"                                             desc="62"                                                              />
+  <cot cot="a-.-S-X-M-P"               full="Surface/PASSENGER"                                             desc="63"                                                              />
+  <cot cot="a-.-S-X-M-P"               full="Surface/PASSENGER"                                             desc="64"                                                              />
+  <cot cot="a-.-S-X-M-P"               full="Surface/PASSENGER"                                             desc="65"                                                              />
+  <cot cot="a-.-S-X-M-P"               full="Surface/PASSENGER"                                             desc="66"                                                              />
+  <cot cot="a-.-S-X-M-P"               full="Surface/PASSENGER"                                             desc="67"                                                              />
+  <cot cot="a-.-S-X-M-P"               full="Surface/PASSENGER"                                             desc="68"                                                              />
+  <cot cot="a-.-S-X-M-P"               full="Surface/PASSENGER"                                             desc="69"                                                              />
+  <cot cot="a-.-S-X-M-R"               full="Surface/ROLL ON/ROLL OFF"                                      desc="ROLL ON/ROLL OFF"                                                       />
+  <cot cot="a-.-S-X-M-T-O"             full="Surface/TOWING VESSEL"                                         desc="TOWING VESSEL"                                                          />
+  <cot cot="a-.-S-X-M-T-U"             full="Surface/TUG"                                                   desc="31"                                                                    />
+  <cot cot="a-.-S-X-M-T-U"             full="Surface/TUG"                                                   desc="32"                                                                    />
+  <cot cot="a-.-S-X-M-T-U"             full="Surface/TUG"                                                   desc="52"                                                                    />
+  <cot cot="a-.-S-X-R"                 full="Surface/LEISURE CRAFT"                                         desc="36"                                                          />
+  <cot cot="a-.-S-X-R"                 full="Surface/LEISURE CRAFT"                                         desc="37"                                                          />
+</types>

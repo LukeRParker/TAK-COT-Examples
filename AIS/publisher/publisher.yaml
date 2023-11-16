@@ -1,0 +1,112 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ais-publisher
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ais-publisher
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ais-publisher
+    spec:
+      containers:
+        - env:
+            - name: KAFKANAME
+              value: "democluster-kafka-bootstrap.kafka.svc" #The name of your Kafka service in K8s. This is based on the example at ./Generalised/kafka/strimzi-kafka-kraft.yaml
+            - name: KAFKAPORT
+              value: "9092" #The port your Kafka service is running on
+            - name: KAFKATOPIC
+              value: "aistopic" #The Kafka topic you want to subscribe to
+            - name: AISHOST
+              value: "153.44.253.27" #The addressable hostname that is providing the AIS data stream
+            - name: AISPORT
+              value: "5631" #The port where the AIS data is available
+            - name: MSGSTALE
+              value: "3600" #Stale time for the CoT message that's produced
+            - name: DATASOURCE
+              value: "AIS" #Naming of the data source field within the CoT message
+            - name: REDISHOST
+              value: "redis-service" #The addressable hostname of the Redis store that holds ship names and ship types
+            - name: REDISPORT
+              value: "6379" #The port on which the Redis store can be accessed
+          image: ais-publisher
+          name: ais-publisher
+          imagePullPolicy: Never
+          resources: {}
+          tty: true
+      hostname: ais-publisher
+      restartPolicy: Always
+status: {}
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-pv
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: standard
+  hostPath:
+    path: "/mnt/data"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: redis-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: standard
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-store
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis-store
+  template:
+    metadata:
+      labels:
+        app: redis-store
+    spec:
+      containers:
+      - name: redis
+        image: redis:latest
+        ports:
+        - containerPort: 6379
+        volumeMounts:
+        - mountPath: /data
+          name: redis-storage
+      volumes:
+      - name: redis-storage
+        persistentVolumeClaim:
+          claimName: redis-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-service
+spec:
+  selector:
+    app: redis-store
+  ports:
+    - protocol: TCP
+      port: 6379
+      targetPort: 6379
