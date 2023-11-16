@@ -1,3 +1,9 @@
+# Modified from https://github.com/snstac/pytak
+
+__author__ = "Greg Albrecht W2GMD <oss@undef.net>"
+__copyright__ = "Copyright 2023 Greg Albrecht"
+__license__ = "Apache License, Version 2.0"
+
 import os
 import tempfile
 import warnings
@@ -19,12 +25,6 @@ try:
     USE_CRYPTOGRAPHY = True
 except ImportError:
     warnings.warn(INSTALL_MSG)
-
-
-__author__ = "Greg Albrecht W2GMD <oss@undef.net>"
-__copyright__ = "Copyright 2023 Greg Albrecht"
-__license__ = "Apache License, Version 2.0"
-
 
 def save_pem(pem: bytes, dest: Union[str, None] = None) -> str:
     """Save PEM data to dest."""
