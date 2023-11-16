@@ -1,8 +1,6 @@
 *.key
 *.p12
 __pycache__/
-AIS/subscriber/certificate.p12
-AIS/subscriber/password.key
 AIS/subscriber/subscriber-dev.yaml
 
 Generalised/publisher
