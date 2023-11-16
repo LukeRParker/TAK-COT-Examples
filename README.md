@@ -1,4 +1,4 @@
-# TAK CoT Examples
+# Kubernetes and Kafka TAK CoT Scenarios
 
 This repo contains examples written in Python for adapter patterns that enable:
 
@@ -14,3 +14,7 @@ Ultimately it is a design choice as to whether data is converted to CoT XML befo
 
 - Generalised example of a publisher and subscriber.
 - Further examples beyond AIS.
+
+## Other Works
+
+These examples build on some of the foundational work and use cases developed by Sensors & Signals LLC - https://github.com/snstac under Apache License 2.0.
