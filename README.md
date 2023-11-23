@@ -10,6 +10,16 @@ This repo contains examples written in Python for adapter patterns that enable:
 
 Ultimately it is a design choice as to whether data is converted to CoT XML before being published to Kafka, or published to Kafka in a format such as JSON, and then converted by the subscriber to CoT XML. The examples within this repo could be refactored to support the conversion to CoT XML occurring on the subscriber vice publisher component.
 
+## ./Generalised
+
+Here you'll find:
+
+- **./publisher**: A generalised example of a Python script for generating CoT XML messages with an associated XML schema reference point for CoT types within the XML standard.
+
+- **./kafka**: Yaml files for deploying a simple Kafka cluster in KRaft mode using the Strimzi Operator.
+
+- **./tak**: A simplified set of files and scripts for building container images of TAK Server and it's PostgreSQL database, and then deploying them to Kubernetes.
+
 ## Work in Progress
 
 - Generalised example of a publisher and subscriber.
