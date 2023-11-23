@@ -1,0 +1,65 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-compose-tak.yaml
+    kompose.version: 1.30.0 (9d8dcb518)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: takserver
+  name: takserver
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      lbtype: external
+      io.kompose.service: takserver
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert -f docker-compose-tak.yaml
+        kompose.version: 1.30.0 (9d8dcb518)
+      creationTimestamp: null
+      labels:
+        lbtype: external
+        io.kompose.service: takserver
+        #io.kompose.network/takserver: "true"
+    spec:
+      securityContext:
+        fsGroup: 0
+      containers:
+        - env: 
+            - name: CA_PASSWORD_FILE
+              value: /etc/secret-volume/password
+          image: stormcloud-takserver-k8s
+          imagePullPolicy: Never
+          name: takserver
+          ports:
+            - containerPort: 8443
+              name: '8443-port'
+            - containerPort: 8446
+            - containerPort: 8089
+              name: '8089-port'
+            - containerPort: 8444
+            - containerPort: 8080
+          resources: {}
+          tty: true
+          volumeMounts:
+            - mountPath: /etc/secret-volume
+              name: secret-volume
+              readOnly: true
+            - mountPath: /opt/tak/certs/files 
+              name: takserver-core-claim0
+      hostname: takserver
+      restartPolicy: Always
+      volumes:
+        - name: secret-volume 
+          secret:
+            secretName: ca-password
+        - name: takserver-core-claim0 #need to recreate this claim
+          persistentVolumeClaim:
+            claimName: takserver-core-claim0 
+status: {}

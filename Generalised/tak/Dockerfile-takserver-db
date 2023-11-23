@@ -1,0 +1,25 @@
+#FROM postgres:15.0
+FROM postgis/postgis:15-3.3
+
+RUN apt-get update \
+  && apt-get install -y wget apt-transport-https \
+  && rm -rf /var/lib/apt/lists/*
+  
+RUN mkdir -p /microsoft-openjdk
+
+# Download and extract Microsoft Build of OpenJDK 11 into the new directory
+RUN wget https://aka.ms/download-jdk/microsoft-jdk-11-linux-x64.tar.gz
+RUN tar -xzvf microsoft-jdk-11-linux-x64.tar.gz --strip-components=1 -C /microsoft-openjdk 
+RUN rm microsoft-jdk-11-linux-x64.tar.gz
+
+# Set JAVA_HOME
+ENV JAVA_HOME /microsoft-openjdk/
+
+# Update PATH
+ENV PATH $JAVA_HOME/bin:$PATH
+
+COPY /tak-server/tak/ /opt/tak
+COPY CoreConfig.xml /opt/tak
+
+ENTRYPOINT ["/opt/tak/db-utils/configureInDocker.sh"]
+
