@@ -18,6 +18,8 @@ docker build -f Dockerfile -t tak-ais-subscriber .
 
 2. Run the following command, ensuring that you reflect the path to a valid .p12 TLS certificate for a TAK client, and path to the .key file that contains the password for the .p12 certificate.
 
+**NOTE**: If you deployed TAK Server using the [example here](https://github.com/LukeRParker/TAK-COT-Examples/blob/main/Generalised/tak/kubernetes-deployment.bat), then you can skip this step and instead modify **subscriber.py** and **subscriber.yaml** to use the previously created secrets takserver-cert-pem and takserver-cert-key.
+
 ```
 kubectl create secret generic tak-client-tls-cert --from-file=certificate.p12=<PATH/TO/TAK/P12/FILE> --from-file=password.key=<PATH/TO/TAK/KEY/FILE>
 ```
