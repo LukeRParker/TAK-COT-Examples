@@ -38,7 +38,7 @@ Follow these steps to create your TAK Server and Database images.
 
 2. Open Command Prompt.
 
-3. In the Command Prompt, use the Change Directory "**cd**" command to navigate to the **StormCloud-TAK-Server-v2** folder.
+3. In the Command Prompt, use the Change Directory "**cd**" command to navigate to the **./Generalised/tak** folder.
 
 4. Run the command below in Command Prompt.
 
@@ -64,7 +64,7 @@ Follow these steps to get TAK Server and Database running in Kubernetes.
 
 2. Open a Command Prompt with access to your Kubernetes cluster.
 
-3. In the Command Prompt, use the Change Directory "**cd**" command to navigate to the **StormCloud-TAK-Server-v2** folder.
+3. In the Command Prompt, use the Change Directory "**cd**" command to navigate to the **./Generalised/tak** folder.
 
 4. Run the command below in Command Prompt.
 
