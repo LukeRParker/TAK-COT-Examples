@@ -16,15 +16,16 @@ To get started, you will need to have the following:
 - TAK Server Docker .zip (you will need to register for an account at [tak.gov](https://tak.gov/) to get access to this as a download. Tested with TAK Server version 4.9 Release 23.0).
 
 **Deploying to Kubernetes**
-  1. If using **kubernetes-deployment.bat**:
-    - Windows OS if using the provided .bat files.
-    - Kubernetes running locally.
-    - kubectl installed.
 
-  2. Else:
-    - Access to the target Kubernetes cluster.
-    - kubectl installed.
-    - Note: provided .yaml files in ./deployment assume locally held container images. These will require updating if you push your containers to a remote CR.
+  **1. If using kubernetes-deployment.bat**:
+  - Windows OS if using the provided .bat files.
+  - Kubernetes running locally.
+  - kubectl installed.
+
+  **2. Else:**
+  - Access to the target Kubernetes cluster.
+  - kubectl installed.
+  - *Note:* provided .yaml files in ./deployment assume locally held container images. These will require updating if you push your containers to a remote CR.
 
 #
 ## Getting started
@@ -45,7 +46,9 @@ Follow these steps to create your TAK Server and Database images.
    container-creation.bat
    ```
 
-5. Your container images should now be available in Docker. You can now push these images to a remote CR. You will also see that additional yaml files have been created to support deployment to Kubernetes. **Note** - the secrets you provided earlier are written into the following files by **core_config_creator.py**. These files should be removed when no longer required.
+5. You will be asked to provide a password for the database and for the Certificate Authority. **NOTE:** These should be changed when the containers are deployed to their target environment, with any corresponding Kubernetes secrets also being updated to reflect the changes.
+
+6. Your container images should now be available in Docker. You can now push these images to a remote CR. You will also see that additional yaml files have been created to support deployment to Kubernetes. **Note** - the secrets you provided earlier are written into the following files by **core_config_creator.py**. These files should be removed when no longer required.
 
 ```
 ./deployment/ca-password-secret.yaml
@@ -140,7 +143,7 @@ TAK Server uses a Postgresql database.  This is configured during deployment via
     </repository>
 ```
 
-As well as asking the user to provide a CA password, **container-creation.bat** also asks the user to provide a password for the PostrgeSQL database.
+As well as asking the user to provide a CA password, **container-creation.bat** also asks the user to provide a password for the PostrgeSQL database. This overcomes issues around keeping hard coded passwords in a repo.
 
 #
 ## Handy tips
