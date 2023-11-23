@@ -2,6 +2,3 @@
 *.p12
 __pycache__/
 AIS/subscriber/subscriber-dev.yaml
-
-Generalised/publisher
-Generalised/subscriber
